@@ -1,5 +1,9 @@
-A Lush Theme for Neovim.
-===
+# Vanessa.nvim Version 0.1
 
-See: http://git.io/lush.nvim for more information on Lush and a helper script
-to setup your repo clone.
+First pre-release of my custom Neovim Colorscheme
+
+# The name ?
+
+It's called Vanessa beacause the person that helped me choose colors is called Vanessa.
+
+Thanks to her btw
