@@ -66,7 +66,8 @@ local theme = lush(function()
     -- lCursor      { }, -- Character under the cursor when |language-mapping| is used (see 'guicursor')
     -- CursorIM     { }, -- Like Cursor, but used when in IME mode |CursorIM|
     -- CursorColumn { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine   { bg = "#351d1c" }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLine   { bg = "#464a63" }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
+    -- CursorLine   { bg = "#351d1c" }, -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory    { fg = "#f0cb67" }, -- Directory names (and other special names in listings)
     DiffAdd      { fg = "#a8d16f" }, -- Diff mode: Added line |diff.txt|
     DiffChange   { fg = "#67a7f0" }, -- Diff mode: Changed line |diff.txt|
@@ -79,7 +80,8 @@ local theme = lush(function()
     VertSplit    { fg = "#a1dfff" }, -- Column separating vertically split windows
     -- Folded       { }, -- Line used for closed folds
     -- FoldColumn   { }, -- 'foldcolumn'
-    SignColumn   { bg = "#211212" }, -- Column where |signs| are displayed
+    SignColumn   { bg = "#282a36" }, -- Column where |signs| are displayed
+    -- SignColumn   { bg = "#211212" }, -- Column where |signs| are displayed
     -- IncSearch    { }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     -- Substitute   { }, -- |:substitute| replacement text highlighting
     LineNr       { fg = "#6a6666" }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
@@ -90,16 +92,21 @@ local theme = lush(function()
     -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
     -- MoreMsg      { }, -- |more-prompt|
     NonText      { EndOfBuffer }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
-    Normal       { bg = "#211212" }, -- Normal text
-    NormalFloat  { bg = "#211212" }, -- Normal text in floating windows.
+    Normal       { bg = "#282a36" }, -- Normal text
+    NormalFloat  { bg = "#282a36" }, -- Normal text in floating windows.
+    -- Normal       { bg = "#211212" }, -- Normal text
+    -- NormalFloat  { bg = "#211212" }, -- Normal text in floating windows.
     -- NormalNC     { }, -- normal text in non-current windows
     Pmenu        { NormalFloat }, -- Popup menu: Normal item.
-    PmenuSel     { bg = "#351d1c", fg = "#f0cb67" }, -- Popup menu: Selected item.
+    PmenuSel     { bg = "#464a63", fg = "#f0cb67" }, -- Popup menu: Selected item.
+    -- PmenuSel     { bg = "#351d1c", fg = "#f0cb67" }, -- Popup menu: Selected item.
     PmenuSbar    { bg = "#1f1f1f", fg = "#a1dfff" }, -- Popup menu: Scrollbar.
-    PmenuThumb   { bg = "#351d1c" }, -- Popup menu: Thumb of the scrollbar.
+    PmenuThumb   { bg = "#464a63" }, -- Popup menu: Thumb of the scrollbar.
+    -- PmenuThumb   { bg = "#351d1c" }, -- Popup menu: Thumb of the scrollbar.
     -- Question     { }, -- |hit-enter| prompt and yes/no questions
     -- QuickFixLine { }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-    Search       { fg = "#211212", bg = "#f564c5" }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+    Search       { fg = "#282a36", bg = "#f564c5" }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+    -- Search       { fg = "#211212", bg = "#f564c5" }, -- Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
     -- SpecialKey   { }, -- Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
     -- SpellBad     { }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
     -- SpellCap     { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
@@ -111,8 +118,10 @@ local theme = lush(function()
     -- TabLineFill  { }, -- Tab pages line, where there are no labels
     -- TabLineSel   { }, -- Tab pages line, active tab page label
     -- Title        { }, -- Titles for output from ":set all", ":autocmd" etc.
-    Visual       { bg = "#733a38" }, -- Visual mode selection
-    VisualNOS    { bg = "#733a38", fg = "#f0cb67" }, -- Visual mode selection when vim is "Not Owning the Selection".
+    Visual       { bg = "#5e6691" }, -- Visual mode selection
+    VisualNOS    { bg = "#5e6691", fg = "#f0cb67" }, -- Visual mode selection when vim is "Not Owning the Selection".
+    -- Visual       { bg = "#733a38" }, -- Visual mode selection
+    -- VisualNOS    { bg = "#733a38", fg = "#f0cb67" }, -- Visual mode selection when vim is "Not Owning the Selection".
     -- WarningMsg   { }, -- Warning messages
     -- Whitespace   { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     Winseparator { bg = "none", fg = "#67a7f0" }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
