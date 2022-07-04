@@ -15,7 +15,8 @@ Thanks to her btw.
 Use your favorite package manager to install that theme.
 It requires Lush.nvim to be working, so make sure to install it too.
 
-## Packer.nvim
+
+For packer.nvim just install it like that :
 
 ```lua
 use { 'L0Wigh/vanessa.nvim', requires = {'rktjmp/lush.nvim'} }
