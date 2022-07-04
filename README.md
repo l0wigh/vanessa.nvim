@@ -1,6 +1,6 @@
 # Vanessa.nvim
 
-![Vanessa Colorscheme](https://raw.githubusercontent.com/l0wigh/Heboris-Vita/master/vanessa.nvim.jpg)
+![Vanessa Colorscheme](https://raw.githubusercontent.com/l0wigh/vanessa.nvim/master/vanessa.nvim.jpg)
 
 Finally I made my own colorscheme for Neovim
 
