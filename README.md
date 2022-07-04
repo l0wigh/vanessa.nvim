@@ -17,7 +17,7 @@ It requires Lush.nvim to be working, so make sure to install it too.
 
 ## Packer.nvim
 
-```
+```lua
 use { 'L0Wigh/vanessa.nvim', requires = {'rktjmp/lush.nvim'} }
 ```
 
