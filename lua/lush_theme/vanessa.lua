@@ -84,7 +84,7 @@ local theme = lush(function()
     -- SignColumn   { bg = "#211212" }, -- Column where |signs| are displayed
     -- IncSearch    { }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     -- Substitute   { }, -- |:substitute| replacement text highlighting
-    LineNr       { fg = "#6a6666" }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+    LineNr       { fg = "#67a7f0" }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr { fg = "#d88bef" }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     -- MatchParen   { }, -- Character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     -- ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
@@ -127,7 +127,7 @@ local theme = lush(function()
     -- WarningMsg   { }, -- Warning messages
     -- Whitespace   { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     Winseparator { bg = "none", fg = "#67a7f0" }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
-    -- WildMenu     { }, -- Current match in 'wildmenu' completion
+    WildMenu     { bg = "#f564c5", fg = "#000000" }, -- Current match in 'wildmenu' completion
 
     -- Common vim syntax groups used for all kinds of code and markup.
     -- Commented-out groups should chain up to their preferred (*) group
@@ -137,7 +137,7 @@ local theme = lush(function()
     --
     -- Uncomment and edit if you want more specific syntax highlighting.
 
-    Comment        { LineNr }, -- Any comment
+    Comment        { fg = "#6a6666" }, -- Any comment
 
     Constant       { fg = "#9966cc" }, -- (*) Any constant
     String         { fg = "#f0cb67" }, --   A string constant: "this is a string"
@@ -340,6 +340,7 @@ local theme = lush(function()
     -- CmpItemKindEvent         { PmenuSel },
     -- CmpItemKindOperator      { PmenuSel },
     -- CmpItemKindTypeParameter { bg = "#f564c5", fg = "#000000" },
+
   }
 end)
 
